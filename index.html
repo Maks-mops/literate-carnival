@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US CONSULT — На вершине доверия и возможностей</title>
+    <meta name="description"
+        content="Премиальная консалтинговая группа в Кыргызстане. Аудиторские услуги и инвестиции в недвижимость для крупного бизнеса.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacts-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;500;700&family=Work+Sans:wght@300;400;500;600&family=Bodoni+Moda:wght@400;500;600&family=Crimson+Pro:wght@300;400&family=Spectral:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ========== HEADER (FIXED) ========== -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <!-- Logo -->
+            <a href="#hero" class="logo">US CONSULT</a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#services" class="nav-link">Направления</a>
+                <a href="#advantages" class="nav-link">Преимущества</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <nav class="nav-mobile">
+            <a href="#about" class="nav-link-mobile">О нас</a>
+            <a href="#services" class="nav-link-mobile">Направления</a>
+            <a href="#advantages" class="nav-link-mobile">Преимущества</a>
+            <a href="#contacts" class="nav-link-mobile">Контакты</a>
+        </nav>
+    </div>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero-section" id="hero">
+        <!-- Background Image with Overlay -->
+        <div class="hero-background"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">На вершине доверия и возможностей</h1>
+            <p class="hero-subtitle">Комплексные решения для бизнеса и капитала</p>
+            <button class="cta-button"
+                onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">Узнать больше</button>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">
+            <span class="scroll-text">ЛИСТАЙТЕ ВНИЗ</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== PLACEHOLDER SECTIONS (IDs for smooth scroll) ========== -->
+    <!-- These will be created in the next phases -->
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2 class="about-title">О нас</h2>
+
+            <div class="about-content">
+                <p class="about-text about-text-1">
+                    US Consult — это премиальная платформа для тех,
+                    кто ценит профессионализм и эксклюзивность.
+                </p>
+
+                <p class="about-text about-text-2">
+                    С 2015 года мы предоставляем аудиторские услуги компаниям
+                    и открываем доступ к уникальным инвестиционным возможностям
+                    в недвижимость для состоятельных клиентов.
+                </p>
+
+                <p class="about-text about-text-3">
+                    Мы работаем не с массовым рынком, а с теми, кто привык
+                    к высоким стандартам. Каждый клиент получает индивидуальный
+                    подход и максимальную конфиденциальность.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ========== PHILOSOPHY SECTION ========== -->
+    <section id="philosophy" class="philosophy-section">
+        <div class="philosophy-container">
+            <h2 class="philosophy-title">Наша философия</h2>
+
+            <div class="philosophy-content">
+                <p class="philosophy-text philosophy-text-1">
+                    Доверие невозможно купить — его можно только заработать.
+                    Мы строим отношения на основе прозрачности, профессионализма
+                    и безупречного выполнения обязательств.
+                </p>
+
+                <p class="philosophy-text philosophy-text-2">
+                    Результат — единственное, что имеет значение. Мы не даем
+                    громких обещаний. Мы создаем ценность через качество работы,
+                    которая говорит сама за себя.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <h2 class="services-title">Что мы предлагаем</h2>
+
+            <div class="services-cards">
+                <!-- ЛЕВАЯ КАРТОЧКА -->
+                <div class="service-card service-card-left">
+                    <h3 class="card-title">Аудиторские услуги</h3>
+                    <p class="card-subtitle">Для юридических лиц и компаний</p>
+
+                    <ul class="card-list">
+                        <li class="card-item">Финансовый аудит</li>
+                        <li class="card-item">Налоговый аудит</li>
+                        <li class="card-item">Сопровождение бизнеса</li>
+                    </ul>
+
+                    <button class="card-cta">Получить консультацию</button>
+                </div>
+
+                <!-- РАЗДЕЛИТЕЛЬ -->
+                <div class="cards-divider"></div>
+
+                <!-- ПРАВАЯ КАРТОЧКА -->
+                <div class="service-card service-card-right">
+                    <h3 class="card-title">Инвестиции в недвижимость</h3>
+                    <p class="card-subtitle">Для крупных и состоятельных инвесторов</p>
+
+                    <ul class="card-list">
+                        <li class="card-item">Эксклюзивные объекты недвижимости</li>
+                        <li class="card-item">Прямой доступ к застройщикам</li>
+                        <li class="card-item">Премиальный сервис</li>
+                    </ul>
+
+                    <button class="card-cta">Получить доступ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== ADVANTAGES & STATS SECTION ========== -->
+    <section id="advantages" class="advantages-section">
+        <div class="advantages-container">
+
+            <!-- ЧАСТЬ 1: ПРЕИМУЩЕСТВА -->
+            <h2 class="advantages-title">Почему выбирают нас</h2>
+
+            <div class="advantages-grid">
+                <!-- Преимущество 1 -->
+                <div class="advantage-card">
+                    <span class="advantage-number">1</span>
+                    <h3 class="advantage-title">Мы не работаем с массовым рынком</h3>
+                    <p class="advantage-text">
+                        Ограниченное количество клиентов позволяет уделять
+                        максимум внимания каждому проекту
+                    </p>
+                </div>
+
+                <!-- Преимущество 2 -->
+                <div class="advantage-card">
+                    <span class="advantage-number">2</span>
+                    <h3 class="advantage-title">Результат, а не процесс</h3>
+                    <p class="advantage-text">
+                        Нас интересует ваш успех, а не количество встреч и отчетов
+                    </p>
+                </div>
+
+                <!-- Преимущество 3 -->
+                <div class="advantage-card">
+                    <span class="advantage-number">3</span>
+                    <h3 class="advantage-title">Эксклюзивные предложения без посредников</h3>
+                    <p class="advantage-text">
+                        Прямой доступ к закрытым объектам от проверенных застройщиков
+                    </p>
+                </div>
+
+                <!-- Преимущество 4 -->
+                <div class="advantage-card">
+                    <span class="advantage-number">4</span>
+                    <h3 class="advantage-title">Эффективность в каждой детали</h3>
+                    <p class="advantage-text">
+                        Быстрая проверка, глубокий анализ, конкретные решения
+                    </p>
+                </div>
+            </div>
+
+            <!-- РАЗДЕЛИТЕЛЬ -->
+            <div class="section-divider"></div>
+
+            <!-- ЧАСТЬ 2: ЦИФРЫ -->
+            <h2 class="stats-title">Цифры говорят сами за себя</h2>
+
+            <div class="stats-grid">
+                <!-- Цифра 1 -->
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Завершенных аудитов</div>
+                </div>
+
+                <!-- Цифра 2 -->
+                <div class="stat-item">
+                    <div class="stat-number" data-target="126">0</div>
+                    <div class="stat-label">Бизнесам помогли</div>
+                </div>
+
+                <!-- Цифра 3 -->
+                <div class="stat-item">
+                    <div class="stat-number" data-target="17">0</div>
+                    <div class="stat-label">Премиум-объектов реализовано</div>
+                </div>
+
+                <!-- Цифра 4 -->
+                <div class="stat-item">
+                    <div class="stat-number" data-target="350">0</div>
+                    <div class="stat-label">Инвестировано клиентами</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ========== CONTACTS SECTION ========== -->
+    <section id="contacts" class="contacts-section">
+        <!-- Темный overlay -->
+        <div class="contacts-overlay"></div>
+
+        <div class="contacts-content">
+            <!-- Левая часть: Призыв к действию -->
+            <div class="contacts-left">
+                <h2 class="contacts-title">ГОТОВЫ НАЧАТЬ СОТРУДНИЧЕСТВО?</h2>
+                <p class="contacts-subtitle">Свяжитесь с нами для консультации</p>
+                <a href="tel:+996705778553" class="contacts-button">СВЯЗАТЬСЯ С НАМИ</a>
+            </div>
+
+            <!-- Правая часть: Контактная информация -->
+            <div class="contacts-right">
+                <div class="contact-name">Сатенбаев Улан</div>
+                <div class="contact-info">
+                    <span class="contact-label">Телефон:</span> +996 705 778 553
+                </div>
+                <div class="contact-info">
+                    <span class="contact-label">Адрес:</span> г Бишкек, ул Грибоедова 8
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vertical Navigation (Dots) -->
+    <nav class="page-navigation">
+        <a href="#hero" class="nav-dot active" data-section="hero">
+            <span class="nav-dot-label">Hero</span>
+        </a>
+        <a href="#about" class="nav-dot" data-section="about">
+            <span class="nav-dot-label">О нас</span>
+        </a>
+        <a href="#services" class="nav-dot" data-section="services">
+            <span class="nav-dot-label">Направления</span>
+        </a>
+        <a href="#advantages" class="nav-dot" data-section="advantages">
+            <span class="nav-dot-label">Преимущества</span>
+        </a>
+        <a href="#contacts" class="nav-dot" data-section="contacts">
+            <span class="nav-dot-label">Контакты</span>
+        </a>
+    </nav>
+
+    <!-- ========== CONTACT FORM MODAL ========== -->
+    <div class="modal" id="contactModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+
+            <h3 class="modal-title">Свяжитесь с нами</h3>
+            <p class="modal-subtitle">Заполните форму и мы свяжемся с вами в ближайшее время</p>
+
+            <form class="modal-form" id="contactForm">
+                <div class="form-group">
+                    <label class="form-label" for="formName">Имя *</label>
+                    <input type="text" class="form-input" id="formName" name="name" placeholder="Ваше имя" required>
+                    <span class="form-error">Пожалуйста, введите ваше имя</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="formContact">Контакты *</label>
+                    <input type="text" class="form-input" id="formContact" name="contact"
+                        placeholder="Email или телефон" required>
+                    <span class="form-error">Пожалуйста, введите email или телефон</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="formPreference">Предпочтительный способ связи</label>
+                    <select class="form-input form-select" id="formPreference" name="preference">
+                        <option value="phone">Телефон</option>
+                        <option value="email">Email</option>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="telegram">Telegram</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="formComment">Комментарий *</label>
+                    <textarea class="form-input form-textarea" id="formComment" name="comment"
+                        placeholder="Опишите ваш запрос" rows="4" required></textarea>
+                    <span class="form-error">Пожалуйста, опишите ваш запрос</span>
+                </div>
+
+                <button type="submit" class="form-submit">Отправить</button>
+            </form>
+
+            <!-- Success message (hidden by default) -->
+            <div class="form-success" id="formSuccess">
+                <div class="success-icon">✓</div>
+                <h4 class="success-title">Спасибо за заявку!</h4>
+                <p class="success-text">Мы свяжемся с вами в ближайшее время.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
